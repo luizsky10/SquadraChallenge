@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/SquadraChallenge/static/css/main.5f361e03.chunk.css",
-    "main.js": "/SquadraChallenge/static/js/main.faca4164.chunk.js",
-    "main.js.map": "/SquadraChallenge/static/js/main.faca4164.chunk.js.map",
+    "main.js": "/SquadraChallenge/static/js/main.19a67bf2.chunk.js",
+    "main.js.map": "/SquadraChallenge/static/js/main.19a67bf2.chunk.js.map",
     "runtime-main.js": "/SquadraChallenge/static/js/runtime-main.3cc01e19.js",
     "runtime-main.js.map": "/SquadraChallenge/static/js/runtime-main.3cc01e19.js.map",
     "static/js/2.e17de22c.chunk.js": "/SquadraChallenge/static/js/2.e17de22c.chunk.js",
     "static/js/2.e17de22c.chunk.js.map": "/SquadraChallenge/static/js/2.e17de22c.chunk.js.map",
     "index.html": "/SquadraChallenge/index.html",
-    "precache-manifest.295e55ae857d80079b5843e6709339e1.js": "/SquadraChallenge/precache-manifest.295e55ae857d80079b5843e6709339e1.js",
+    "precache-manifest.50e2e7cd470d16af4b02b50d6af0cb79.js": "/SquadraChallenge/precache-manifest.50e2e7cd470d16af4b02b50d6af0cb79.js",
     "service-worker.js": "/SquadraChallenge/service-worker.js",
     "static/css/main.5f361e03.chunk.css.map": "/SquadraChallenge/static/css/main.5f361e03.chunk.css.map",
     "static/js/2.e17de22c.chunk.js.LICENSE.txt": "/SquadraChallenge/static/js/2.e17de22c.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.3cc01e19.js",
     "static/js/2.e17de22c.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.faca4164.chunk.js"
+    "static/js/main.19a67bf2.chunk.js"
   ]
 }
