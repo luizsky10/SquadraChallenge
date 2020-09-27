@@ -55,6 +55,7 @@ const Characters = () => {
   const imagePath = "https://dragon-ball-api.herokuapp.com/api/";
 
   const items = filteredData
+    // eslint-disable-next-line
     ?.filter((data) => {
       if (searchData === null) return data;
       else if (data.name.toLowerCase().includes(searchData.toLowerCase())) {
