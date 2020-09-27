@@ -13,7 +13,8 @@ const Characters = () => {
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
-          <div className={classes.Title}>Squadra FrontEnd Challenge</div>
+          <div className={classes.Title}>Squadra front-end challenge</div>
+
           <div className={classes.Secondary}>
             WebApp desenvolvido utilizando a api
             https://dragon-ball-api.herokuapp.com/documentation.
@@ -50,10 +51,10 @@ const useStyles = makeStyles((theme) => ({
     overflow: "auto",
   },
   Title: {
-    margin: "20px",
-    fontSize: "30px",
-    fontWeight: "600",
+    fontFamily: "Oswald, sans-serif",
     textAlign: "center",
+    fontSize: "28px",
+    fontWeight: "600",
   },
   Secondary: {
     margin: "20px",

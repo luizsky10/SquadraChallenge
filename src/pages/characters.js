@@ -6,7 +6,6 @@ import {
   Container,
   makeStyles,
   Card,
-  CardActionArea,
   CardContent,
   CardMedia,
 } from "@material-ui/core";
@@ -65,33 +64,34 @@ const Characters = () => {
     .map((character) => {
       return (
         <div>
-          <Card className={classes.cardRoot}>
-            <CardActionArea>
-              <CardMedia title="Character Card">
-                <img
-                  src={
-                    character.image.length > 30
-                      ? character.image
-                      : imagePath + character.image
-                  }
-                  onError={(e) => {
-                    e.target.onerror = null;
-                    e.target.src = require("../assets/imageNotFound.png");
-                  }}
-                  alt=""
-                  style={{
-                    transition: "opacity ease-in-out 0.3s",
-                    height: "150px",
-                    minWidth: "150px",
-                    bottom: "30px",
-                  }}
-                />
-              </CardMedia>
+          <Card className={classes.card}>
+            <CardMedia title="Character Card">
+              <img
+                src={
+                  character.image.length > 30
+                    ? character.image
+                    : imagePath + character.image
+                }
+                onError={(e) => {
+                  e.target.onerror = null;
+                  e.target.src = require("../assets/imageNotFound.png");
+                }}
+                alt=""
+                style={{
+                  transition: "opacity ease-in-out 0.3s",
+                  height: "150px",
+                  bottom: "30px",
+                  display: "block",
+                  marginLeft: "auto",
+                  marginRight: "auto",
+                  objectFit: "contain",
+                }}
+              />
+            </CardMedia>
 
-              <CardContent>
-                <span className={classes.characterName}>{character.name}</span>
-              </CardContent>
-            </CardActionArea>
+            <CardContent>
+              <span className={classes.characterName}>{character.name}</span>
+            </CardContent>
           </Card>
         </div>
       );
@@ -139,7 +139,7 @@ const useStyles = makeStyles((theme) => ({
   itemGrid: {
     marginTop: 16,
     display: "grid",
-    gridTemplateColumns: "repeat( auto-fill, minmax(300px, 1fr) )",
+    gridTemplateColumns: "repeat( auto-fill, minmax(250px, 1fr) )",
     gridRowGap: "16px",
     gridColumnGap: "16px",
   },
@@ -156,6 +156,10 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "600px",
     textAlign: "center",
     fontSize: "25px",
+    display: "block",
+    marginLeft: "auto",
+    marginRight: "auto",
+    objectFit: "contain",
   },
 }));
 

@@ -50,6 +50,10 @@ const Planets = () => {
                         height: "250px",
                         minWidth: "150px",
                         bottom: "30px",
+                        display: "block",
+                        marginLeft: "auto",
+                        marginRight: "auto",
+                        objectFit: "contain",
                       }}
                     />
                     <h2>{world.name}</h2>
