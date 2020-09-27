@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "61e335c8b5f9c64a01b66b2f118143f2",
+    "revision": "1adb1e359fded6f277a5d24b8bb64401",
     "url": "/SquadraChallenge/index.html"
   },
   {
-    "revision": "96323932466063f507ac",
+    "revision": "fbdf898c3aaad86b04c9",
     "url": "/SquadraChallenge/static/css/main.5ecd60fb.chunk.css"
   },
   {
-    "revision": "a0857dca2cf6006a2f0a",
-    "url": "/SquadraChallenge/static/js/2.9c837ce9.chunk.js"
+    "revision": "85989c6aa4d0aed9094d",
+    "url": "/SquadraChallenge/static/js/2.5626bfea.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/SquadraChallenge/static/js/2.9c837ce9.chunk.js.LICENSE.txt"
+    "url": "/SquadraChallenge/static/js/2.5626bfea.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "96323932466063f507ac",
-    "url": "/SquadraChallenge/static/js/main.5bf3d46d.chunk.js"
+    "revision": "fbdf898c3aaad86b04c9",
+    "url": "/SquadraChallenge/static/js/main.4727e808.chunk.js"
   },
   {
     "revision": "0af3fddca4e414604b9b",
