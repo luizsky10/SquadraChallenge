@@ -15,4 +15,4 @@ $ npm start ou $ yarn start
 
 Como utilizar: Para navegar entre o conteúdo do projeto é possível utilizar a barra lateral, clicando nos icones. 
 
-Stack: As tecnologias utilizadas foram: React, React-Router-Dom, GH-Pages Material-UI e Axios.
+Stack: As tecnologias utilizadas foram: React, React-Router-Dom, GH-Pages, Material-UI e Axios.
