@@ -15,9 +15,37 @@ import {
   Button,
 } from "@material-ui/core";
 
-const Characters = () => {
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useParams,
+} from "react-router-dom";
+
+const Citizens = () => {
   const classes = useStyles();
 
+  const planet = useParams();
+
+  const [data, setData] = useState();
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await axios.get(
+        "https://cors-anywhere.herokuapp.com/https://dragon-ball-api.herokuapp.com/api/planet/" +
+          planet.namePlanet
+      );
+
+      setData(result.data);
+    };
+
+    fetchData();
+  }, []);
+
+  console.log(data);
+
+  const imagePath = "https://dragon-ball-api.herokuapp.com/api/";
   return (
     <div className={classes.root}>
       <Dashboard />
@@ -25,7 +53,13 @@ const Characters = () => {
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
-          <div className={classes.itemGrid}>Nada ainda</div>
+          <h1 className={classes.Citizens}>Habitantes do planeta</h1>
+          <div className={classes.itemGrid}>
+            {" "}
+            {data?.residents?.map((character) => (
+              <h2 className={classes.citizensName}> {character}</h2>
+            ))}
+          </div>
         </Container>
       </main>
     </div>
@@ -43,7 +77,7 @@ const useStyles = makeStyles((theme) => ({
   },
   appBarSpacer: theme.mixins.toolbar,
   content: {
-    flexGrow: 1,
+    flexGrow: 2,
     overflow: "auto",
   },
   cardRoot: {
@@ -56,49 +90,13 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 16,
     display: "grid",
     gridTemplateColumns: "repeat( auto-fill, minmax(300px, 1fr) )",
-    gridRowGap: "16px",
-    gridColumnGap: "16px",
+    gridRowGap: "10px",
+    gridColumnGap: "10px",
+  },
+  Citizens: {},
+  citizensName: {
+    fontWeight: "500",
   },
 }));
 
-export default Characters;
-
-/*
-    const [data, setData] = useState();
-  
-    useEffect(() => {
-      const fetchData = async () => {
-        const result = await axios.get(
-          "https://dragon-ball-api.herokuapp.com/api/character/"
-        );
-  
-        setData(result.data);
-      };
-  
-      fetchData();
-    }, []);
-  
-    const classes = useStyles();
-  
-    const diffName = (obj) => {
-      if (
-        obj.name !== "Gabriel" &&
-        obj.name !== "goku" &&
-        obj.name !== "Picollo" &&
-        obj.name !== "krilin" &&
-        obj.name !== "<h1>gaaaaaaaa</h1>" &&
-        obj.name !== "Piculo_olo"
-      ) {
-        return true;
-      } else {
-        return false;
-      }
-    };
-  
-    const filteredData = data?.filter(diffName);
-  
-    console.log("Filtered data", filteredData);
-  
-    const imagePath = "https://dragon-ball-api.herokuapp.com/api/";
-  
-  */
+export default Citizens;
