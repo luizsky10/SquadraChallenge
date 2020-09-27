@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Dashboard from "../components/Dashboard";
 import axios from "axios";
-import { Modal, Button } from "react-bootstrap";
+
 import { Container, makeStyles } from "@material-ui/core";
 
 const Planets = () => {
@@ -21,7 +21,6 @@ const Planets = () => {
     fetchData();
   }, []);
 
-  console.log(data);
   const imagePath = "https://dragon-ball-api.herokuapp.com/api/";
 
   return (
@@ -33,7 +32,10 @@ const Planets = () => {
         <Container maxWidth="lg" className={classes.container}>
           <div className={classes.itemGrid}>
             {data?.map((world) => (
-              <Link to={"/planetas/" + world.name}>
+              <Link
+                to={"/planetas/" + world.name}
+                style={{ color: "black", textDecoration: "none" }}
+              >
                 <div className={classes.cardRoot}>
                   <div>
                     <img

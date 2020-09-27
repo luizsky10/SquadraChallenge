@@ -3,12 +3,7 @@ import Characters from "./pages/characters";
 import Planets from "./pages/planets";
 import Citizens from "./pages/citizens";
 import Home from "./pages/home";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  withRouter,
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -27,6 +22,10 @@ function App() {
         </Route>
         <Route path="/planetas/:namePlanet">
           <Citizens />
+        </Route>
+
+        <Route exact path="/SquadraChallenge">
+          <Home />
         </Route>
       </Switch>
     </Router>

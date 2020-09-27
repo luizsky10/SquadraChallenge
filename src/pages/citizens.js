@@ -1,27 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Dashboard from "../components/Dashboard";
-import Footer from "../components/Footer";
 import axios from "axios";
 
-import {
-  Container,
-  makeStyles,
-  Card,
-  CardActionArea,
-  CardActions,
-  CardContent,
-  CardMedia,
-  Typography,
-  Button,
-} from "@material-ui/core";
+import { Container, makeStyles } from "@material-ui/core";
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useParams,
-} from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 const Citizens = () => {
   const classes = useStyles();
@@ -41,11 +24,8 @@ const Citizens = () => {
     };
 
     fetchData();
-  }, []);
+  });
 
-  console.log(data);
-
-  const imagePath = "https://dragon-ball-api.herokuapp.com/api/";
   return (
     <div className={classes.root}>
       <Dashboard />
@@ -70,7 +50,6 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
   },
-  span: {},
   container: {
     paddingTop: theme.spacing(4),
     paddingBottom: theme.spacing(4),
@@ -80,12 +59,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 2,
     overflow: "auto",
   },
-  cardRoot: {
-    maxWidth: 200,
-  },
-  media: {
-    height: 150,
-  },
+
   itemGrid: {
     marginTop: 16,
     display: "grid",
@@ -93,7 +67,6 @@ const useStyles = makeStyles((theme) => ({
     gridRowGap: "10px",
     gridColumnGap: "10px",
   },
-  Citizens: {},
   citizensName: {
     fontWeight: "500",
   },
