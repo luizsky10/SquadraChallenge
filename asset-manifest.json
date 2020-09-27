@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/SquadraChallenge/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/SquadraChallenge/static/js/main.d78e7024.chunk.js",
-    "main.js.map": "/SquadraChallenge/static/js/main.d78e7024.chunk.js.map",
+    "main.js": "/SquadraChallenge/static/js/main.1e00e7bd.chunk.js",
+    "main.js.map": "/SquadraChallenge/static/js/main.1e00e7bd.chunk.js.map",
     "runtime-main.js": "/SquadraChallenge/static/js/runtime-main.3cc01e19.js",
     "runtime-main.js.map": "/SquadraChallenge/static/js/runtime-main.3cc01e19.js.map",
-    "static/js/2.5626bfea.chunk.js": "/SquadraChallenge/static/js/2.5626bfea.chunk.js",
-    "static/js/2.5626bfea.chunk.js.map": "/SquadraChallenge/static/js/2.5626bfea.chunk.js.map",
+    "static/js/2.9764e05a.chunk.js": "/SquadraChallenge/static/js/2.9764e05a.chunk.js",
+    "static/js/2.9764e05a.chunk.js.map": "/SquadraChallenge/static/js/2.9764e05a.chunk.js.map",
     "index.html": "/SquadraChallenge/index.html",
-    "precache-manifest.58d9148a81de8dfea5e13f114bf01536.js": "/SquadraChallenge/precache-manifest.58d9148a81de8dfea5e13f114bf01536.js",
+    "precache-manifest.d37d88018a2946eff52b70217c354d65.js": "/SquadraChallenge/precache-manifest.d37d88018a2946eff52b70217c354d65.js",
     "service-worker.js": "/SquadraChallenge/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/SquadraChallenge/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.5626bfea.chunk.js.LICENSE.txt": "/SquadraChallenge/static/js/2.5626bfea.chunk.js.LICENSE.txt",
+    "static/js/2.9764e05a.chunk.js.LICENSE.txt": "/SquadraChallenge/static/js/2.9764e05a.chunk.js.LICENSE.txt",
     "static/media/dragonball.png": "/SquadraChallenge/static/media/dragonball.b6d909e3.png"
   },
   "entrypoints": [
     "static/js/runtime-main.3cc01e19.js",
-    "static/js/2.5626bfea.chunk.js",
+    "static/js/2.9764e05a.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.d78e7024.chunk.js"
+    "static/js/main.1e00e7bd.chunk.js"
   ]
 }

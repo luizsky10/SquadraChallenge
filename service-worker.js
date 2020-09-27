@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/SquadraChallenge/precache-manifest.58d9148a81de8dfea5e13f114bf01536.js"
+  "/SquadraChallenge/precache-manifest.d37d88018a2946eff52b70217c354d65.js"
 );
 
 self.addEventListener('message', (event) => {
