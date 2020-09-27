@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1adb1e359fded6f277a5d24b8bb64401",
+    "revision": "030933d56ef3339cffe37607b28cdd19",
     "url": "/SquadraChallenge/index.html"
   },
   {
-    "revision": "fbdf898c3aaad86b04c9",
+    "revision": "1d91d5b838b844e23272",
     "url": "/SquadraChallenge/static/css/main.5ecd60fb.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/SquadraChallenge/static/js/2.5626bfea.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fbdf898c3aaad86b04c9",
-    "url": "/SquadraChallenge/static/js/main.4727e808.chunk.js"
+    "revision": "1d91d5b838b844e23272",
+    "url": "/SquadraChallenge/static/js/main.d78e7024.chunk.js"
   },
   {
     "revision": "0af3fddca4e414604b9b",
